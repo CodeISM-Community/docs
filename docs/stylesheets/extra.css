@@ -1,0 +1,14 @@
+/* Move primary sidebar to the right */
+.md-sidebar--primary {
+    order: 100;
+}
+
+.md-footer__inner:not([hidden]) {
+    display: none;
+}
+
+/* Color anchor tags differently*/
+[data-md-color-scheme="slate"] {
+    --md-hue: 210; 
+    --md-typeset-a-color: #c973d9;
+}
