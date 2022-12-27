@@ -1,0 +1,48 @@
+site_name: CodeISM Docs
+
+plugins:
+  search:
+  literate-nav:
+    nav_file: navigation.md
+  include-markdown:
+
+theme:
+  name: material
+  logo: assets/logo-orange.png
+  favicon: assets/logo-orange.png
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - toc.integrate
+  palette:
+      
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+extra_javascript:
+  - javascript/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+copyright: <strong>Copyright &copy; 2022 CodeISM, IIT(ISM), Dhanbad</strong>, by github.com/codeISM
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+      tex_inline_wrap: ['$', '$']
+      tex_block_wrap: ['$$', '$$']
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite:
+  - pymdownx.snippets:
+  - pymdownx.superfences:
