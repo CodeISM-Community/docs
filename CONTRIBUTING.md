@@ -46,7 +46,7 @@ Try to add problems in ascending order of their difficulty. If you don't have en
 You can render the pages locally. All you need is Python, with the installed `mkdocs-material` package.
 
 ```console
-$ git clone https://github.com/codeism-community/docs.git && cd codeism-docs
+$ git clone https://github.com/codeism-community/docs.git && cd docs
 $ pip install \
         mkdocs \
         mkdocs-material \
