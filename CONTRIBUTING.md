@@ -1,5 +1,3 @@
-# How To Contribute?
-
 ## General Information
 
 This website (articles, design, ...) is developed via [Github](https://github.com/codeism-community/docs). **Note that only the students of IIT(ISM) can contribute to the project**.
