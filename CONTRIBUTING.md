@@ -16,4 +16,4 @@ In order to make contribution consider the following steps:
 
 If you're making a new article or moving existing one to a different place, please make sure that your changes are reflected in
 
-- The list of all articles in [navigation.md]([https://github.com/codeism-community/docs/main/src/navigation](https://github.com/CodeISM-Community/docs/blob/main/docs/navigation.md).
+- The list of all articles in [navigation.md](https://github.com/CodeISM-Community/docs/blob/main/docs/navigation.md).
