@@ -7,6 +7,6 @@ title: Main Page
 
 {% include 'navigation.md' %}
 
-## Contributing
+## How to Contribute?
 
 {% include '../CONTRIBUTING.md' %}
