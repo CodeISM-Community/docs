@@ -53,7 +53,7 @@ $$ dp[i][j] = dp[i-1][j-W[i]] | dp[i-1][j] $$
 
 The memoization solution $O(n\times K)$ can be written easily by a few lines of code in the original recursive function.
 
-```cpp hl_lines="5"
+```cpp hl_lines="5 7 9"
 memset(dp, -1, sizeof dp);
 bool knapsack(int index, int n, vector<long long> &W, long long K) {
     if(index >= n) return K == 0;
@@ -92,7 +92,8 @@ long long knapsack(int n, long long K, vector<long long> &W) {
 
 ## Practice Problems
 
+- [Atcoder - Frog](https://atcoder.jp/contests/dp/tasks/dp_b)
 - [CSES - Book Shop](https://cses.fi/problemset/task/1158/)
 - [Atcoder - Vacations](https://atcoder.jp/contests/dp/tasks/dp_c)
-- [Codeforces - boredom](https://codeforces.com/problemset/problem/455/A)
+- [Codeforces - Boredom](https://codeforces.com/problemset/problem/455/A)
 
