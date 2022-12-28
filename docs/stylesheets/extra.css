@@ -1,3 +1,8 @@
+/* Changing the highlight line color for codeblocks */
+:root > * {
+    --md-code-hl-color: #97a7ff;
+}
+
 /* Move primary sidebar to the right */
 .md-sidebar--primary {
     order: 100;

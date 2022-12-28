@@ -4,9 +4,10 @@
 
 `%` is an operator which is frequently used in number theory. It stands for the remainder in CS theory.
 
-Examples -
-- $5 \mod 2 = 1$ 
-- $23 \mod 8 = 7$
+Examples -<br>
+
+- $5 \% 2 = 1$ 
+- $23 \% 8 = 7$
 
 The value of a modular operation can lie in the range $0$ to $m-1$ $i.e.$
 
@@ -16,10 +17,10 @@ Generally, in competitive programming problems, value of $m$ is given as $10^9+7
 
 ## Modular Arithmetic
 
-- $(a + b)\mod m = (a\mod m + b\mod m) \mod m$
-- $(a - b)\mod m = (a\mod m - b\mod m) \mod m$
-- $(a \times b)\mod m = (a\mod m \times b\mod m) \mod m$
-- $(\frac a b)\mod m = (a\mod m \times b^{-1}\mod m) \mod m$ *(We will cover the modular inverse shortly)*
+- $(a + b)\% m = (a\% m + b\% m) \% m$
+- $(a - b)\% m = (a\% m - b\% m + m) \% m$
+- $(a \times b)\% m = (a\% m \times b\% m) \% m$
+- $(\frac a b)\% m = (a\% m \times b^{-1}\% m) \% m$ *(We will cover the modular inverse shortly)*
 
 ## Euler Totient Function
 
@@ -38,6 +39,14 @@ $$ a^{\phi(m) - 1} \equiv a^{-1} \pmod m $$
 
 According to Euler Totient function definition, if the number $m$ is taken a prime(which is the case most of the time in competitive programming), then the $\phi(n)$ becomes $m-1$ therefore the **modular inverse** of any number may be calculated as
 
-$$ a^{-1} = a^{m-2} \pmod m $$
+$$ a^{-1} \equiv a^{m-2} \pmod m $$
 
-The exponent $(m-2)$ can be huge ($O(10^9)$) in CP problems so we will use a teqnique called **_Binary Exponentiation_** to calculate the modular exponents efficiently.
+The exponent $(m-2)$ can be huge $O(10^9)$ in CP problems so we will use a teqnique called **_Binary Exponentiation_** to calculate the modular exponents efficiently.
+
+**Corollary:** Since if $m$ is odd, then the exponent can be reduced by the _Euler's Theorem_ to $(m-2) \pmod {m-1}$. The proof of same is out of the scope of this article.
+
+$$ a^{-1} \equiv a^{m-2 \pmod {m-1}} \pmod m $$
+
+## Practice Problems
+
+- [Codechef - Chef and Riffles](https://www.codechef.com/JAN221B/problems/RIFFLES)
