@@ -72,7 +72,7 @@ long long binpow(long long a, long long n) {
 
 ## Applications
 
-### Effective computation of large exponents modulo $m$
+### Effective computation of large exponents modulo _m_
 
 Many times we need not compute the exact exponents rather the problem demands us to compute a large power (often, a big prime number) and to do it we can use _binary exponentiation_ with a slight change reflected in the code below.
 
@@ -90,7 +90,7 @@ long long binpow(long long a, long long n, long long m) {
 }
 ```
 
-### Multiplication of two numbers modulo $m$
+### Multiplication of two numbers modulo _m_
 
 If we need to calculate multiplication of two very large numbers which themselves can fit in `long long` data types but their product cannot, then we can modify the binary exponentiation to compute it modulo $m$ within range.
 

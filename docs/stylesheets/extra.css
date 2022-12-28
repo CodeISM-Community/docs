@@ -1,6 +1,6 @@
 /* Changing the highlight line color for codeblocks */
 :root > * {
-    --md-code-hl-color: #97a7ff;
+    --md-code-hl-color: #c7d0ff;
 }
 
 /* Move primary sidebar to the right */
@@ -12,8 +12,9 @@
     display: none;
 }
 
-/* Color anchor tags differently*/
+/* Dark mode color settings */
 [data-md-color-scheme="slate"] {
     --md-hue: 210; 
     --md-typeset-a-color: #c973d9;
+    --md-code-hl-color: #1b2555;
 }
