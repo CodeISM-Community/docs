@@ -1,7 +1,9 @@
 - Home
     - [Main Page](index.md)
     - [Navigation](navigation.md)
-    - [How to Contribute?](../CONTRIBUTING.md)
+- Number Theory
+    - [Basics](number_theory/basics.md)
+    - [Binary Exponentiation](number_theory/binpow.md)
 - Dynamic Programming
     - [Knapsack](dp/knapsack.md)
     - [LIS and LCS](dp/lis_lcs.md)
