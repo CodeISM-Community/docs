@@ -64,10 +64,9 @@ int LCS(string a, int n, string b, int m) {
 }
 ```
 
-## Extended Problems
-
-1. You are given a sequence and you have to find the length of the Longest Palindromic Subsequence
-
 ## Practice Problems
 
 - [Codeforces - Palindrome](https://codeforces.com/problemset/problem/335/B)
+- [Leetcode - Longest Common Subequence](https://leetcode.com/problems/longest-common-subsequence/)
+- [Leetcode - Longest Increasing Subequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+- [Leetcode - Longest Palindromic Subequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
