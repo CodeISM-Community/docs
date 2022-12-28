@@ -1,7 +1,6 @@
 - Home
     - [Main Page](index.md)
     - [Navigation](navigation.md)
-    - [How to Contribute?](../CONTRIBUTING.md)
 - Dynamic Programming
     - [Knapsack](dp/knapsack.md)
     - [LIS and LCS](dp/lis_lcs.md)
