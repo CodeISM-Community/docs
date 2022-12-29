@@ -27,6 +27,7 @@ jobs:
                 mkdocs-material \
                 pymdown-extensions \
                 mkdocs-include-markdown-plugin \
-                mkdocs-git-committers-plugin-2 \
-                mkdocs-literate-nav
+                mkdocs-literate-nav \
+                mkdocs-git-revision-date-localized-plugin \
+                mkdocs-git-authors-plugin
       - run: mkdocs gh-deploy --force
