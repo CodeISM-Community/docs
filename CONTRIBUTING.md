@@ -14,8 +14,7 @@ In order to make contribution consider the following steps:
 
 > Make Sure to add the following lines at the end of every MarkDown page
 ```markdown
-### Authors
-{{ git_page_authors }}
+Authors: {{ git_page_authors }}
 ```
 
 If you're making a new article or moving existing one to a different place, please make sure that your changes are reflected in

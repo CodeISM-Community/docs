@@ -97,5 +97,4 @@ long long knapsack(int n, long long K, vector<long long> &W) {
 - [Atcoder - Vacations](https://atcoder.jp/contests/dp/tasks/dp_c)
 - [Codeforces - Boredom](https://codeforces.com/problemset/problem/455/A)
 
-### Authors
-{{ git_page_authors }}
+Authors: {{ git_page_authors }}

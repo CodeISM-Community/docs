@@ -51,5 +51,4 @@ $$ a^{-1} \equiv a^{m-2 \pmod {m-1}} \pmod m $$
 
 - [Codechef - Chef and Riffles](https://www.codechef.com/JAN221B/problems/RIFFLES)
 
-### Authors
-{{ git_page_authors }}
+Authors: {{ git_page_authors }}
