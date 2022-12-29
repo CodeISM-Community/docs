@@ -142,5 +142,3 @@ long long modmul(long long a, long long b, long long m) {
 
 - [cp-algorithms - Binary Exponentiation](https://cp-algorithms.com/algebra/binary-exp.html)
 - [GFG - Modular Multiplication](https://www.geeksforgeeks.org/multiply-large-integers-under-large-modulo/)
-
-Authors: {{ git_page_authors }}

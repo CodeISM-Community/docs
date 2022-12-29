@@ -70,5 +70,3 @@ int LCS(string a, int n, string b, int m) {
 - [Leetcode - Longest Common Subequence](https://leetcode.com/problems/longest-common-subsequence/)
 - [Leetcode - Longest Increasing Subequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 - [Leetcode - Longest Palindromic Subequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
-
-Authors: {{ git_page_authors }}

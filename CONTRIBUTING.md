@@ -12,11 +12,6 @@ In order to make contribution consider the following steps:
 4. Create a pull-request by clicking the _Compare & pull request_ button.
 5. Somebody from the core team will look over the changes. This might take a few hours/days.
 
-> Make Sure to add the following lines at the end of every MarkDown page
-```markdown
-Authors: {{ git_page_authors }}
-```
-
 If you're making a new article or moving existing one to a different place, please make sure that your changes are reflected in
 
 - The list of all articles in [navigation.md](https://github.com/CodeISM-Community/docs/blob/main/docs/navigation.md). (The navigation list should be in proper format)
