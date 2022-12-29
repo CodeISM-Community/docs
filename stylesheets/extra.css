@@ -1,0 +1,20 @@
+/* Changing the highlight line color for codeblocks */
+:root > * {
+    --md-code-hl-color: #c7d0ff;
+}
+
+/* Move primary sidebar to the right */
+.md-sidebar--primary {
+    order: 100;
+}
+
+.md-footer__inner:not([hidden]) {
+    display: none;
+}
+
+/* Dark mode color settings */
+[data-md-color-scheme="slate"] {
+    --md-hue: 210; 
+    --md-typeset-a-color: #c973d9;
+    --md-code-hl-color: #1b2555;
+}
