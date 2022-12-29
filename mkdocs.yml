@@ -1,19 +1,29 @@
 site_name: CodeISM Docs
-
+repo_url: https://github.com/codeism-community/docs
+repo_name: CodeISM-Community/docs
+edit_uri: ""
 plugins:
   search:
   literate-nav:
     nav_file: navigation.md
   include-markdown:
+  git-revision-date-localized:
+    enable_creation_date: true
+    type: timeago
+  git-authors:
+    show_contribution: true
 
 theme:
   name: material
   logo: assets/logo-orange.png
+  icon:
+    repo: fontawesome/brands/github
   favicon: assets/logo-orange.png
   features:
     - navigation.tracking
     - navigation.tabs
     - toc.integrate
+    - navigation.instant
   palette:
       
     # Palette toggle for light mode
