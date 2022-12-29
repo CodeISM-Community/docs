@@ -1,0 +1,15 @@
+/* Winter Snowflakes Theme */
+.snowflake {
+    animation: fall 13s linear forwards;
+    color: #fff;
+    position: fixed;
+    top: -20px;
+    z-index: 1000;
+}
+
+@keyframes fall {
+    to {
+        transform: translateX(-100px) translateY(105vh);
+        opacity: 70%;
+    }
+}
