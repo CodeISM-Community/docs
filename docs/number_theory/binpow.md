@@ -107,12 +107,10 @@ a \cdot 13 &= a \cdot 1101_2 \\ \notag
 We can note by the above example that we are adding to our $ans$ whenever there is a $set$ bit present in binary of $b$.
 The recursive formula for the above idea can be framed as:
 
-$$ a \cdot b = 
-\begin{cases} 
+$$ a \cdot b = \begin{cases} 
 0 &\text{if } b = 0 \\ 
-2 \cdot a \cdot \frac{b}{2} &\text{if }b > 0 \text{ and }b \text{ even} \\ 
-2  \cdot a \cdot \frac{b-1}{2} + a &\text{if }b > 0 \text{ and }b \text{ odd} 
-\end{cases} $$ 
+2 \cdot a \cdot \frac{b}{2} &\text{if }b > 0 \text{ and }b \text{ even} \\
+2  \cdot a \cdot \frac{b-1}{2} + a &\text{if }b > 0 \text{ and }b \text{ odd} \end{cases} $$
 
 The same code for the binary exponentiation can be reused with some slight modifications:
 

@@ -1,0 +1,21 @@
+
+{% extends "main.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+  <!-- {{ super() }} -->
+  
+  <!-- Hero for landing page HTML comes here-->
+  {% include "newyear.html" %}
+
+{% endblock %}
+
+<!-- Content -->
+{% block content %}
+    {{ super() }}
+{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}
+    {{ super() }}
+{% endblock %}
