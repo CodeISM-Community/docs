@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -190,6 +191,7 @@
     <div class="md-container" data-md-component="container">
       
       
+  <!-- 
         
           
             
@@ -252,7 +254,152 @@
 </nav>
           
         
-      
+       -->
+  
+  <!-- Hero for landing page HTML comes here-->
+  <!-- Additional styles for landing page comes here-->
+<style>
+
+    /* Application header should be static for the landing page */
+    /* .md-header {
+      position: initial;
+    } */
+
+    /* Remove spacing, as we cannot hide it completely */
+    /* .md-main__inner {
+      margin: 0;
+    } */
+
+    /* Hide main content for now */
+    /* .md-content {
+      display: none;
+    } */
+
+    /* Hide table of contents */
+    /* @media screen and (min-width: 60em) {
+      .md-sidebar--secondary {
+        display: none;
+      }
+    } */
+
+    /* Hide navigation */
+    /* @media screen and (min-width: 76.25em) {
+      .md-sidebar--primary {
+        display: none;
+      }
+    } */
+
+    .newyear-container {
+        color: #ddd;
+    }
+
+    .banner-image {
+        height: 100vh;
+        width: 100%;
+        /* background-image: url("https://www.iitism.ac.in/assets/img/herit.jpg"); */
+        background-image: url("assets/heritage_night.jpg");
+        background-size: cover;
+        background-position: 40% 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .countdown {
+        margin: 12px;
+        padding: 30px;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-radius: 2rem;
+    }
+
+    .countdown-title {
+        font-size: 4em;
+    }
+
+    .text2023 {
+        font-size: 1.5em;
+    }
+
+    .timer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .time {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0.8rem 1.6rem;
+        margin: 0.8rem;
+        border-radius: 0.6rem;
+        border: 2px solid #ddd;
+    }
+
+    .timer-container span {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+</style>
+
+<div class="newyear-container">
+    <div class="banner-image">
+        <!-- <div class="countdown-container"> -->
+            <div class="countdown">
+                <h1 class="countdown-title">Countdown to New Year <span class="text2023">2023</span></h1>
+                <div class="timer">
+                    <div class="timer-container">
+                        <div class="time hours">100</div>
+                        <span class="text">Hours</span>
+                    </div>
+                    <div class="timer-container">
+                        <div class="time min">100</div>
+                        <span class="text">Minutes</span>
+                    </div>
+                    <div class="timer-container">
+                        <div class="time sec">100</div>
+                        <span class="text">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+</div>
+
+<script type="text/javascript">
+    const newYear = '1/1/2023';
+    const newYearDate = new Date(newYear);
+    
+    const hoursElement = document.querySelector(".hours");
+    const minutesElement = document.querySelector(".min");
+    const secondsElement = document.querySelector(".sec");
+
+    var timerNeeded = true;
+
+    function countDownTimer() {
+        const newDate = new Date();
+        const duration = (newYearDate - newDate) / 1000;
+        
+        if(duration < 0) {
+            timerNeeded = false;
+            return;
+        }
+        const hours = Math.floor(duration / 3600);
+        const mins = Math.floor(duration / 60) % 60;
+        const seconds = Math.floor(duration) % 60;
+        
+        hoursElement.textContent = hours > 10 ? hours : `0${hours}`;
+        minutesElement.textContent = mins > 10 ? mins : `0${mins}`;
+        secondsElement.textContent = seconds > 10 ? seconds : `0${seconds}`;
+    }
+
+    setInterval(() => {
+        if(timerNeeded) countDownTimer();
+    }, 1000);
+</script>
+
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -575,6 +722,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+    
   
                   
 
@@ -649,7 +797,7 @@ There should only be 1 Heading on the article and all the subheadings should mat
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-12-27T23:14:08+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-12-27</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-12-30T02:23:57+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-12-30</span>
       
         <br>
         Created:
@@ -668,10 +816,11 @@ There should only be 1 Heading on the article and all the subheadings should mat
   
     <div class="md-source-date">
       <small>
-          Authors: <span class='git-page-authors git-authors'><a href='mailto:jindalujjwal0720@gmail.com'>Ujjwal Jindal</a> (50.0%), <a href='mailto:121515524+codeism-community@users.noreply.github.com'>CodeISM Community</a> (50.0%)</span>
+          Authors: <span class='git-page-authors git-authors'><a href='mailto:jindalujjwal0720@gmail.com'>Ujjwal Jindal</a> (53.85%), <a href='mailto:121515524+codeism-community@users.noreply.github.com'>CodeISM Community</a> (46.15%)</span>
       </small>
     </div>
   
+
 
               </article>
             </div>
@@ -681,6 +830,7 @@ There should only be 1 Heading on the article and all the subheadings should mat
         
       </main>
       
+    
         <footer class="md-footer">
   
     
@@ -724,6 +874,7 @@ There should only be 1 Heading on the article and all the subheadings should mat
   </div>
 </footer>
       
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>

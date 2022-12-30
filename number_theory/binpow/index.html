@@ -668,12 +668,10 @@ a \cdot 13 &amp;= a \cdot 1101_2 \\ \notag
 \end{align} $$</div>
 <p>We can note by the above example that we are adding to our <span class="arithmatex">$ans$</span> whenever there is a <span class="arithmatex">$set$</span> bit present in binary of <span class="arithmatex">$b$</span>.
 The recursive formula for the above idea can be framed as:</p>
-<p>$$ a \cdot b = 
-\begin{cases} 
-0 &amp;\text{if } b = 0 \ 
-2 \cdot a \cdot \frac{b}{2} &amp;\text{if }b &gt; 0 \text{ and }b \text{ even} \ 
-2  \cdot a \cdot \frac{b-1}{2} + a &amp;\text{if }b &gt; 0 \text{ and }b \text{ odd} 
-\end{cases} $$ </p>
+<div class="arithmatex">$$ a \cdot b = \begin{cases} 
+0 &amp;\text{if } b = 0 \\ 
+2 \cdot a \cdot \frac{b}{2} &amp;\text{if }b &gt; 0 \text{ and }b \text{ even} \\
+2  \cdot a \cdot \frac{b-1}{2} + a &amp;\text{if }b &gt; 0 \text{ and }b \text{ odd} \end{cases} $$</div>
 <p>The same code for the binary exponentiation can be reused with some slight modifications:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="nf">modmul</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">m</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">%=</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"></span>
@@ -706,7 +704,7 @@ The recursive formula for the above idea can be framed as:</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-12-29T00:42:27+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-12-29</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-12-30T02:23:57+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-12-30</span>
       
         <br>
         Created:
